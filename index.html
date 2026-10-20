@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>와구와구 | 곤충학과 전공자가 개발한 곤충 중심 게코 사료</title>
+<meta name="description" content="전공자가 원료 선별부터 연구·개발·검증까지 완료한 3종의 곤충을 배합한 성장 특화형 슈퍼푸드. 와구와구 제품 테스트를 신청하세요.">
+<meta name="theme-color" content="#03684F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="와구와구 WAGU WAGU">
+<meta property="og:title" content="와구와구 제품 테스트 신청">
+<meta property="og:description" content="곤충학과 전공자가 개발한 곤충 중심 게코 사료. Standard 25% · Signature 35%">
+<meta property="og:url" content="https://eidesis8504.github.io/waguwagu/">
+<meta property="og:image" content="https://eidesis8504.github.io/waguwagu/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jua&display=swap">
+<style>
+:root{
+  --bg:#F4F6EC; --green:#03684F; --green-d:#024a39; --yellow:#FEE08F; --lilac:#CDD3EE;
+  --mint:#B9E3DF; --ink:#111; --white:#FFFFFF; --muted:#3c4a43;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Gaegu','Jua',system-ui,sans-serif;font-weight:700;font-size:18px;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.display{font-family:'Jua',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 26px;border-radius:999px;font-family:'Jua',sans-serif;font-size:19px;text-decoration:none;cursor:pointer;border:3px solid transparent;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-green{background:var(--green);color:var(--bg)}
+.btn-line{border-color:var(--green);color:var(--green);background:transparent}
+.btn-black{background:var(--ink);color:var(--white)}
+.btn-black-line{border-color:var(--ink);color:var(--ink);background:transparent}
+:focus-visible{outline:3px solid #E58A00;outline-offset:3px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:3px solid var(--green)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:960px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green)}
+.brand img{width:56px;height:auto}
+.brand span{font-family:'Jua',sans-serif;font-size:21px;line-height:1.05}
+.nav-links{display:flex;align-items:center;gap:18px;font-family:'Jua',sans-serif;font-size:17px}
+.nav-links a{text-decoration:none}
+.nav-links .btn{min-height:44px;padding:8px 18px;font-size:16px}
+@media (max-width:420px){.nav-links .txt{display:none}}
+
+/* hero */
+.hero{padding-top:28px}
+.pill{display:inline-block;background:var(--mint);color:var(--green);font-family:'Jua',sans-serif;padding:8px 18px;border-radius:999px;font-size:16px}
+.hero h1{margin:18px 0 12px;color:var(--green);font-size:clamp(34px,8.6vw,64px);line-height:1.25}
+.hero p{margin:0 0 22px;font-size:clamp(17px,4.2vw,21px)}
+.hl{background:var(--green);color:var(--bg);padding:0 6px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{margin:12px auto 0;width:100%;max-width:620px;height:auto}
+
+/* section heading pill */
+.sec{padding-top:56px;padding-bottom:8px}
+.sec-pill{display:block;width:fit-content;margin:0 auto 24px;padding:14px 48px;border-radius:999px;font-family:'Jua',sans-serif;font-size:clamp(24px,6vw,32px);text-align:center}
+.sec-pill.g{background:var(--green);color:var(--bg)}
+.sec-pill.y{background:var(--yellow);color:var(--ink)}
+.caption{text-align:center;margin:-8px 0 24px;font-size:17px}
+
+/* chart */
+.chart{max-width:640px;margin:0 auto}
+.c-group{display:grid;grid-template-columns:84px 1fr;align-items:center;gap:10px;margin-bottom:18px}
+.c-label{text-align:right;font-size:17px}
+.c-bars{display:flex;flex-direction:column;gap:6px;border-left:1px solid #c9ccc2;margin-right:52px;background-image:repeating-linear-gradient(to right,transparent 0,transparent calc(20% - 1px),#d5d8ce calc(20% - 1px),#d5d8ce 20%)}
+.c-row{position:relative;height:22px}
+.c-bar{height:22px;width:var(--w)}
+.c-row span{position:absolute;top:50%;transform:translateY(-50%);left:calc(var(--w) + 8px);font-size:15px;white-space:nowrap}
+.axis{display:grid;grid-template-columns:84px 1fr;gap:10px;font-size:14px}
+.axis div:last-child{position:relative;height:20px;margin-right:52px}
+.axis div:last-child span{position:absolute;transform:translateX(-50%)}
+.legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:16px}
+.legend i{display:inline-block;width:18px;height:18px;border-radius:5px;vertical-align:-3px;margin-right:4px}
+.k-ins{background:var(--green)}.k-fru{background:var(--yellow)}.k-gra{background:var(--lilac)}
+
+/* products */
+.products{background:var(--green);color:var(--bg);border-radius:28px;padding:32px 22px;margin:56px auto 0;max-width:920px}
+.products h2{margin:0;text-align:center;font-size:clamp(28px,7vw,40px)}
+.products .sub{text-align:center;margin:4px 0 24px;font-size:18px}
+.p-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{border-radius:18px;padding:22px 20px;color:var(--ink);display:flex;flex-direction:column}
+.card.std{background:var(--bg)}
+.card.sig{background:var(--yellow)}
+.card .kick{font-size:17px}
+.card h3{margin:0;font-family:'Jua',sans-serif;font-weight:400;font-size:36px;line-height:1.2}
+.card .who{font-size:16px;margin:0 0 14px}
+.card .pct{font-family:'Jua',sans-serif;font-size:72px;line-height:1;margin:6px 0 4px}
+.card .pct small{font-size:15px;font-family:'Gaegu';display:block;margin-top:4px}
+.card .price{font-size:20px;margin:14px 0 18px}
+.card .btn{width:100%;margin-top:auto}
+
+/* ingredients */
+.insects{display:grid;grid-template-columns:1.7fr 1fr;gap:12px;max-width:640px;margin:0 auto;align-items:start}
+.insects figure{margin:0;text-align:center}
+.insects figcaption{font-family:'Jua',sans-serif;color:var(--green);font-size:clamp(20px,5vw,26px);margin-top:6px}
+.fruits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px;max-width:420px;margin:0 auto}
+@media (min-width:760px){.fruits{grid-template-columns:repeat(4,minmax(0,1fr));max-width:840px}}
+.fruits figure{margin:0;text-align:center}
+.fruits img{width:100%;max-width:200px;margin:0 auto}
+.fruits figcaption{font-size:22px;margin-top:2px}
+
+/* form */
+.form-box{position:relative;background:var(--bg);border:4px solid var(--ink);border-radius:26px;padding:30px 22px 32px;max-width:760px;margin:64px auto 48px}
+.form-box h2{margin:0 0 22px;padding:0 36px;text-align:center;font-family:'Jua',sans-serif;font-weight:400;font-size:clamp(26px,7vw,44px)}
+.pencil{position:absolute;right:-8px;top:-26px;width:clamp(56px,14vw,80px);pointer-events:none}
+.field{margin-bottom:24px;border:0;padding:0;min-width:0}
+.field>label:not(.opt),.field legend{display:block;font-size:19px;margin-bottom:8px;padding:0}
+.req{color:#C0392B}
+input[type=text],input[type=tel]{width:100%;min-height:56px;padding:12px 14px;border:3px solid var(--ink);border-radius:4px;background:var(--white);font:inherit;font-weight:400;font-size:18px;color:var(--ink)}
+.opts{display:flex;flex-wrap:wrap;gap:10px 22px}
+.opt{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;font-size:18px}
+.opt input{appearance:none;-webkit-appearance:none;width:30px;height:30px;margin:0;border:2.5px solid #333;border-radius:4px;background:var(--white);display:grid;place-items:center;cursor:pointer;flex:0 0 auto}
+.opt input:checked{background:var(--green);border-color:var(--green)}
+.opt input:checked::after{content:"";width:9px;height:16px;border:solid var(--white);border-width:0 4px 4px 0;transform:translateY(-2px) rotate(45deg)}
+.notice{font-size:15px;font-weight:400;color:var(--muted);margin:6px 0 0 38px;line-height:1.5}
+.err{display:none;color:#B42318;font-size:16px;margin-top:6px}
+.field.invalid .err{display:block}
+.field.invalid input[type=text]{border-color:#B42318}
+.submit-row{text-align:center;margin-top:8px}
+.submit-row .btn{min-width:240px;min-height:60px;font-size:21px}
+.submit-row .btn[disabled]{opacity:.6;cursor:wait}
+.form-msg{margin-top:14px;text-align:center;font-size:17px;color:#B42318}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.thanks{display:none;text-align:center;padding:24px 4px}
+.thanks h3{font-family:'Jua',sans-serif;font-weight:400;color:var(--green);font-size:32px;margin:0 0 10px}
+.thanks p{margin:0 0 20px;font-size:19px}
+.done .thanks{display:block}
+.done form{display:none}
+
+footer{background:var(--green);color:var(--bg)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 20px;max-width:960px;margin:0 auto}
+.foot .brand{color:var(--bg)}
+.foot p{margin:0;text-align:right;font-size:16px}
+@media (max-width:560px){.foot p{text-align:left}}
+.foot a{font-family:'Jua',sans-serif;font-size:19px;text-decoration:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="와구와구 처음으로">
+      <img src="img/logo-green.png" alt="" width="56" height="51">
+      <span>WAGU<br>WAGU</span>
+    </a>
+    <nav class="nav-links" aria-label="주요 메뉴">
+      <a class="txt" href="#lineup">라인업</a>
+      <a class="txt" href="#ingredients">원료</a>
+      <a class="btn btn-green" href="#apply">제품 테스트 신청</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <span class="pill">뉴칼레도니아 게코 슈퍼푸드</span>
+    <h1 class="display">곤충학과 전공자가<br>개발한 곤충 중심 사료</h1>
+    <p>전공자가 원료 선별부터 연구·개발·검증까지 완료한<br>3종의 곤충을 배합한 <span class="hl">성장 특화형 슈퍼푸드</span></p>
+    <div class="cta-row">
+      <a class="btn btn-green" href="#apply">제품 테스트 신청</a>
+      <a class="btn btn-line" href="#lineup">제품 살펴보기</a>
+    </div>
+    <img class="hero-art" src="img/hero.jpg" alt="와구와구 로고 일러스트" width="760" height="660">
+  </section>
+
+  <section class="sec wrap" aria-labelledby="mix-title">
+    <h2 id="mix-title" class="sec-pill g">제품별 원료 함량</h2>
+    <div class="chart" role="img" aria-label="Standard는 곤충 25%, 과일 50%, 곡물 15%. Signature는 곤충 35%, 과일 40%, 곡물 15%.">
+      <div class="c-group">
+        <div class="c-label">Standard</div>
+        <div class="c-bars">
+          <div class="c-row" style="--w:50%"><div class="c-bar k-ins"></div><span>25%</span></div>
+          <div class="c-row" style="--w:100%"><div class="c-bar k-fru"></div><span>50%</span></div>
+          <div class="c-row" style="--w:30%"><div class="c-bar k-gra"></div><span>15%</span></div>
+        </div>
+      </div>
+      <div class="c-group">
+        <div class="c-label">Signature</div>
+        <div class="c-bars">
+          <div class="c-row" style="--w:70%"><div class="c-bar k-ins"></div><span>35%</span></div>
+          <div class="c-row" style="--w:80%"><div class="c-bar k-fru"></div><span>40%</span></div>
+          <div class="c-row" style="--w:30%"><div class="c-bar k-gra"></div><span>15%</span></div>
+        </div>
+      </div>
+      <div class="axis" aria-hidden="true"><div></div><div><span style="left:0%">0%</span><span style="left:20%">10%</span><span style="left:40%">20%</span><span style="left:60%">30%</span><span style="left:80%">40%</span><span style="left:100%">50%</span></div></div>
+    </div>
+    <div class="legend"><span><i class="k-ins"></i>곤충 함량</span><span><i class="k-fru"></i>과일 함량</span><span><i class="k-gra"></i>곡물 함량</span></div>
+  </section>
+
+  <div class="wrap">
+    <section id="lineup" class="products" aria-labelledby="lineup-title">
+      <h2 id="lineup-title" class="display">이런 개체에게 추천해요!</h2>
+      <p class="sub">개체에게 알맞는 제품으로 시작하기</p>
+      <div class="p-grid">
+        <article class="card std">
+          <div class="kick">Standard로 시작하기</div>
+          <h3>Standard</h3>
+          <p class="who">먹이붙임이 필요한 개체</p>
+          <div class="pct">25%<small>곤충 함량</small></div>
+          <div class="price">100g / ₩22,000</div>
+          <a class="btn btn-black-line" href="#apply" data-pick="Standard">Standard 신청하기</a>
+        </article>
+        <article class="card sig">
+          <div class="kick">Signature로 정착하기</div>
+          <h3>Signature</h3>
+          <p class="who">성장기 개체와 산란기 개체</p>
+          <div class="pct">35%<small>곤충 함량</small></div>
+          <div class="price">100g / ₩25,000</div>
+          <a class="btn btn-black" href="#apply" data-pick="Signature">Signature 신청하기</a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <section id="ingredients" class="sec wrap" aria-labelledby="insect-title">
+    <h2 id="insect-title" class="sec-pill g">핵심 곤충 3종</h2>
+    <p class="caption">'탈지 분말'은 기름을 추출하여 단백질 함량을 높인 분말을 말한다.</p>
+    <div class="insects">
+      <figure><img src="img/insect-tal.jpg" alt="동애등에(BSF)와 밀웜(Meal worm) 일러스트" width="445" height="265"><figcaption>탈지 곤충 분말</figcaption></figure>
+      <figure><img src="img/insect-cricket.jpg" alt="귀뚜라미(Cricket) 일러스트" width="265" height="265"><figcaption>곤충 분말</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec wrap" aria-labelledby="fruit-title">
+    <h2 id="fruit-title" class="sec-pill y">그 외 핵심 원료</h2>
+    <div class="fruits">
+      <figure><img src="img/mango.png" alt="" width="204" height="212"><figcaption>Mango</figcaption></figure>
+      <figure><img src="img/banana.png" alt="" width="204" height="212"><figcaption>Banana</figcaption></figure>
+      <figure><img src="img/fig.png" alt="" width="204" height="208"><figcaption>Fig</figcaption></figure>
+      <figure><img src="img/apricot.png" alt="" width="204" height="208"><figcaption>Apricot</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section id="apply" class="form-box" aria-labelledby="apply-title">
+      <img class="pencil" src="img/pencil.png" alt="" width="132" height="127">
+      <h2 id="apply-title">제품 테스트 신청서</h2>
+
+      <form name="product-test" novalidate>
+        <input type="hidden" name="source" value="">
+        <p class="hp"><label>이 칸은 비워 두세요 <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="field" data-req="text">
+          <label for="name">테스트 신청자의 성함을 적어주세요. <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required maxlength="40">
+          <div class="err">성함을 적어주세요.</div>
+        </div>
+
+        <div class="field" data-req="text">
+          <label for="contact">연락처 또는 인스타그램 ID를 적어주세요. <span class="req" aria-hidden="true">*</span></label>
+          <input id="contact" name="contact" type="text" inputmode="text" autocomplete="tel" placeholder="010-0000-0000 또는 @instagram_id" required maxlength="60">
+          <div class="err">연락받을 연락처나 인스타그램 ID를 적어주세요.</div>
+        </div>
+
+        <fieldset class="field" data-req="group">
+          <legend>사육 중인 개체의 종을 선택해주세요(중복 가능). <span class="req" aria-hidden="true">*</span></legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="species[]" value="크레스티드게코">크레스티드게코</label>
+            <label class="opt"><input type="checkbox" name="species[]" value="가고일 게코">가고일 게코</label>
+            <label class="opt"><input type="checkbox" name="species[]" value="리키에너스">리키에너스</label>
+          </div>
+          <div class="err">한 가지 이상 선택해주세요.</div>
+        </fieldset>
+
+        <fieldset class="field" data-req="group">
+          <legend>현재 사육 중인 개체의 마릿수를 선택해주세요. <span class="req" aria-hidden="true">*</span></legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="count" value="10마리 미만">10마리 미만</label>
+            <label class="opt"><input type="radio" name="count" value="10~49마리">10~49마리</label>
+            <label class="opt"><input type="radio" name="count" value="50~99마리">50~99마리</label>
+            <label class="opt"><input type="radio" name="count" value="100마리 이상">100마리 이상</label>
+          </div>
+          <div class="err">마릿수를 선택해주세요.</div>
+        </fieldset>
+
+        <fieldset class="field" data-req="group">
+          <legend>테스트할 제품을 선택해주세요. <span class="req" aria-hidden="true">*</span></legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="product[]" value="Standard">Standard</label>
+            <label class="opt"><input type="checkbox" name="product[]" value="Signature">Signature</label>
+          </div>
+          <div class="err">테스트할 제품을 선택해주세요.</div>
+        </fieldset>
+
+        <fieldset class="field" data-req="group">
+          <legend>개인정보 수집 동의</legend>
+          <label class="opt"><input type="checkbox" name="consent" value="동의함">[필수] 테스트를 위한 개인정보 수집에 동의합니다.</label>
+          <p class="notice">수집 항목: 성함, 연락처 또는 인스타그램 ID, 사육 정보 · 목적: 제품 테스트 선정 및 안내 · 보유 기간: 테스트 종료 후 즉시 파기</p>
+          <div class="err">개인정보 수집에 동의해야 신청할 수 있어요.</div>
+        </fieldset>
+
+        <div class="submit-row">
+          <button class="btn btn-black" type="submit">신청서 제출하기</button>
+          <div class="form-msg" role="alert" aria-live="assertive"></div>
+        </div>
+      </form>
+
+      <div class="thanks" role="status" aria-live="polite">
+        <h3>신청이 완료됐어요!</h3>
+        <p>테스트 대상으로 선정되면 남겨주신 연락처로 안내드릴게요.<br>와구와구 소식은 인스타그램에서 먼저 만나보세요.</p>
+        <a class="btn btn-green" href="https://www.instagram.com/wagu_wagu_kr/" rel="noopener">@wagu_wagu_kr 보러 가기</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="#top" aria-label="와구와구 처음으로">
+      <img src="img/logo-cream.png" alt="" width="56" height="51">
+      <span>WAGU<br>WAGU</span>
+    </a>
+    <p>우리 도마뱀에게 특별한 한 끼를 제공하는 와구와구<br><a href="https://www.instagram.com/wagu_wagu_kr/" rel="noopener">Instagram @wagu_wagu_kr</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var SUPABASE_URL = 'https://pmbalwxxxpgjjdwuvmjv.supabase.co';
+  var SUPABASE_KEY = 'sb_publishable_K4sikO-2l0P3gnZOYcBvQw_fiKu60UR';
+  var form = document.forms['product-test'];
+  var box = document.getElementById('apply');
+  var msg = form.querySelector('.form-msg');
+  var btn = form.querySelector('button[type=submit]');
+
+  // 유입 경로 기록 (?from=story 등)
+  try {
+    var p = new URLSearchParams(location.search);
+    form.elements.source.value = p.get('from') || p.get('utm_source') || (document.referrer ? new URL(document.referrer).hostname : 'direct');
+  } catch(e) {}
+
+  // 제품 카드의 신청 버튼 → 해당 제품 미리 체크
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click', function(){
+      form.querySelectorAll('input[name="product[]"]').forEach(function(i){
+        if (i.value === a.getAttribute('data-pick')) i.checked = true;
+      });
+    });
+  });
+
+  function validate(){
+    var ok = true, first = null;
+    form.querySelectorAll('.field[data-req]').forEach(function(f){
+      var good;
+      if (f.getAttribute('data-req') === 'text') {
+        good = f.querySelector('input').value.trim().length > 0;
+      } else {
+        good = !!f.querySelector('input:checked');
+      }
+      f.classList.toggle('invalid', !good);
+      if (!good) { ok = false; if (!first) first = f; }
+    });
+    if (first) { first.scrollIntoView({behavior:'smooth', block:'center'}); var i = first.querySelector('input'); if (i) i.focus({preventScroll:true}); }
+    return ok;
+  }
+
+  form.addEventListener('change', function(e){
+    var f = e.target.closest('.field'); if (f && f.classList.contains('invalid')) validate();
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    msg.textContent = '';
+    if (!validate()) return;
+    btn.disabled = true; btn.textContent = '보내는 중…';
+    var fd = new FormData(form);
+    if (fd.get('bot-field')) { box.classList.add('done'); return; }
+    var payload = {
+      name: String(fd.get('name')||'').trim(),
+      contact: String(fd.get('contact')||'').trim(),
+      species: fd.getAll('species[]'),
+      gecko_count: fd.get('count'),
+      products: fd.getAll('product[]'),
+      consent: fd.get('consent') === '동의함',
+      source: String(fd.get('source')||'').slice(0,80) || null
+    };
+    fetch(SUPABASE_URL + '/rest/v1/waguwagu_test_applications', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','apikey':SUPABASE_KEY,'Prefer':'return=minimal'},
+      body: JSON.stringify(payload)
+    })
+      .then(function(r){
+        if (!r.ok) throw new Error(r.status);
+        box.classList.add('done');
+        box.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+      .catch(function(){
+        msg.textContent = '전송에 실패했어요. 잠시 후 다시 시도하거나 인스타그램 DM으로 문의해주세요.';
+      })
+      .finally(function(){ btn.disabled = false; btn.textContent = '신청서 제출하기'; });
+  });
+})();
+</script>
+</body>
+</html>
